@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+html, body{
+    font-family: Ubuntu, sans-serif;
+    width: 100%;
+    height: 100%;
+}
+
+section#inicio{
+    background-color: #333;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    width: 100%;
+    height: 100vh;
+}
+
+section#inicio h2{
+    font-size: 6rem;   
+}
+
+section#inicio span#subtitle{
+    margin-right:  8rem;
+    font-size: 1.5rem;
+}
+
+.text-shadow{
+    text-shadow:  4px 4px 10px #000000;
+}
+
+section#inicio div#arraste{
+    width: 9rem;
+}
+
+section#inicio div#arraste a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+#navbarNav li a:hover{
+    color:#F2C22D;
+}
+
+#Sobre-left{
+    background-color: #F2C22D;
+    width: 50%;
+    float: left;
+}
+
+.full-height {
+    height: 50vh; /* Altura total da viewport */
+}
+
+.h2_format{
+    color:#fff;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+p{
+    font-size: 15px;
+}
+
+#Equipe{
+    background-color: #f5f5f5;
+}
+
+.img-container{
+    height: 300px;
+}
+
+.profile-heigth{
+    width: 300px;
+    height: 400px;
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+.image-container img {
+    width: 100%;
+    height: 100%;
+}
+.overlay {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: bottom 0.5s ease-in-out;
+}
+.overlay h4 {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+.overlay p {
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.5s ease-in-out 0.1s, opacity 0.5s ease-in-out 0.1s; /* Delay to stagger the animation */
+}
+.image-container:hover .overlay {
+    bottom: 0;
+}
+.image-container:hover .overlay h4,
+.image-container:hover .overlay p {
+    transform: translateY(0);
+    opacity: 1;
+    animation: bounce 0.5s ease-in-out;
+}
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10%);
+    }
+}
+/* Cores específicas para cada div */
+.overlay.red {
+    background-color: rgba(255, 0, 0, 0.7);
+}
+.overlay.pink {
+    background-color: rgba(255, 203, 219, 0.7);
+}
+.overlay.blue {
+    background-color: rgba(83, 83, 236, 0.7);
+}
+.overlay.yellow {
+    background-color: rgba(255, 255, 0, 0.7);
+}
+.overlay.purple {
+    background-color: rgba(128, 0, 128, 0.7);
+}
+
+.carousel-control-prev{
+    margin-left: -115px;
+}
+
+.carousel-control-next{
+    margin-right: -115px;
+}
+
+.carousel-indicators{
+    margin-bottom: -35px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 300px; /* Ajuste a altura conforme necessário */
+    object-fit: cover; /* Ajuste para conter ou preencher */
+}
+
+#footer{
+    padding: 15px;
+    color: #fff;
+    font-size: 14px;
+    width: 100%;
+    background-color: #333;
+    transition: .3s;
+}
+
+#contato-left{
+    background-color: #F2C22D;
+    color:#fff
+}
+
+#portfolio{
+    background-color: #f5f5f5;
+}
+
+*::-webkit-scrollbar{
+    width: 10px;
+}
+
+*::-webkit-scrollbar-track{
+    width: 12px;
+    box-shadow: inset 0 0 .3rem #00000050;
+    background-color: #fff;
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: #333;
+}
