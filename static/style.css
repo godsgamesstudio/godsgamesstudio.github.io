@@ -6,105 +6,39 @@ html, body{
     height: 100%;
 }
 
-/*Menu responsivo*/
+/* header */
 
-.logo{
-    margin: 2px;
+.navbar-nav .nav-link:hover {
+    color: #F2C22D;
 }
-
-a {
-    color:#333;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-a:hover {
-    color:#F2C22D;
-}
-
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-family: Ubuntu, sans-serif;
-    height: 8vh;  
-    background-color: #f5f5f5;
-}
-
-.nav-list {
-    list-style: none;
-    display: flex;
-}
-
-.nav-list li{
-    letter-spacing: 3px;
-    margin-top: 12px;
-    margin-right: 40px;
-}
-
-/* Menu Hamburguer */
-.mobile-menu{
-    cursor:pointer;
-    display: none;
-    margin-right: 3%;
-}
-
-.mobile-menu div{
-    width: 32px;
-    height: 2px;
-    background: #333;
-    margin: 8px;
-    transition: 0.3s;
-    
-}
-
-/* Menu animation */
-.mobile-menu.active .line1 {
-    transform: rotate(-45deg) translate(-8px, 8px);
-}
-
-.mobile-menu.active .line2 {
-    opacity: 0;
-}
-
-.mobile-menu.active .line3 {
-    transform: rotate(45deg) translate(-5px, -7px);
-}
-
 
 /* Sobre */
-#Sobre-left{
+
+#sobre-left{
     background-color: #F2C22D;
-    width: 50%;
-}
-
-#Sobre-right{
-    width: 50%;
-}
-
-.full-height {
-    height: 50vh; /* Altura total da viewport */
 }
 
 /* Equipe */
-#Equipe{
+
+#equipe{
     background-color: #f5f5f5;
 }
 
-.img-container{
-    height: 300px;
-}
-
+/* Equipe */ /* Animações */
 
 .image-container {
     position: relative;
+    width: 75%;
+    border: 3px solid #ffc107; /* Yellow border */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Shadow effect */
+    overflow: hidden; /* Esconde o texto inicialmente */
+    padding: 0;
+}
+
+.image-container img {
+    display: block;
     width: 100%;
     height: 200px;
-    overflow: hidden;
-}
-.image-container img {
-    width: 100%;
-    height: 100%;
 }
 
 /* Animação Equipe */
@@ -176,17 +110,6 @@ nav {
 }
 
 /* Portfolio */
-/*.carousel-control-prev{
-    margin-left: -115px;
-}
-
-.carousel-control-next{
-    margin-right: -115px;
-}
-
-.carousel-indicators{
-    margin-bottom: -35px;
-}*/
 
 .carousel-item img {
     width: 100%;
@@ -194,17 +117,15 @@ nav {
     object-fit: cover; /* Ajuste para conter ou preencher */
 }
 
-#portfolio{
-    background-color: #f5f5f5;
-}
+/* Contato */
 
-/* Contatos */
 #contato-left{
     background-color: #F2C22D;
     color:#fff
 }
 
 /* Rodapé */
+
 #footer{
     padding: 15px;
     color: #fff;
@@ -212,283 +133,4 @@ nav {
     width: 100%;
     background-color: #333;
     transition: .3s;
-}
-
-
-/* ScroolBar design */
-*::-webkit-scrollbar{
-    width: 10px;
-}
-
-*::-webkit-scrollbar-track{
-    width: 12px;
-    box-shadow: inset 0 0 .3rem #00000050;
-    background-color: #fff;
-}
-
-*::-webkit-scrollbar-thumb{
-    background-color: #333;
-}
-
-/* media responsiva */ 
-@media (max-width: 999px){
-    
-    body {
-        
-        overflow-x: hidden;
-    }
-
-    .nav-list{
-        position: absolute;
-        top: 108vh;
-        right: 0;
-        width: 50vw;
-        height: 92vh;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-        background: #f5f5f5;
-    }
-    
-    .nav-list li {
-        margin-left: 0;
-        text-decoration: underline;
-        opacity: 0;
-    }
-
-    .mobile-menu {
-        display: block;
-    }
-
-    .nav-list.active{
-        transform: translateX(0);
-    }
-
-    @keyframes navLinkFade{
-        from {
-            opacity: 0;
-            transform: translateX(50px) ;
-        }
-        to{
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
-    #Sobre {
-        flex-direction: column !important;
-    }
-
-    #Sobre-left, #Sobre-right {
-        margin: 0 !important;
-        width: 100% !important;
-        padding: 0 !important;
-    }
-
-    #Sobre-left{
-        padding: 5%;
-    }
-}
-
-/*@media (min-width: 451px) and (max-width: 800px){
-    body {
-        
-        overflow-x: hidden;
-    }
-
-    /* Home 
-    #Home{
-        display: flex !important;
-        height: 75vh !important;
-    }
-    #divHome{
-        align-items: center !important;
-        justify-content: center !important;
-    }
-    #imgHome{
-        width: 80vw !important;
-        height: 40vh !important;
-    }
-
-    #imgLogo{
-        width: 20% !important;
-    }
-
-    nav{
-        height: 10vh;
-    }
-
-    .nav-list{
-        position: absolute;
-        top: 85vh;
-        right: 0;
-        width: 50vw;
-        height: 60vh;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-        background: #f5f5f5;
-    }
-    
-    .nav-list li {
-        margin-left: 0;
-        text-decoration: underline;
-        opacity: 0;
-    }
-
-    .mobile-menu {
-        display: block;
-    }
-
-    .nav-list.active{
-        transform: translateX(0);
-    }
-
-    @keyframes navLinkFade{
-        from {
-            opacity: 0;
-            transform: translateX(50px) ;
-        }
-        to{
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
-    #Sobre {
-        flex-direction: column !important;
-    }
-
-    #Sobre-left, #Sobre-right {
-        margin: 0 !important;
-        width: 100% !important;
-        padding: 0 !important;
-    }
-
-    #Sobre-left{
-        padding: 5%;
-        height: 50vh !important;
-    }
-    #Sobre-left h2{
-        font-size: 2em !important;
-    }
-
-    #Sobre-right p{
-        font-size: 0.9rem !important;
-    }
-    
-    .flex_row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .col-2 {
-        width: 60% !important;
-        height: 20% !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
-}*/
-
-@media (max-width: 450px){
-    
-    body {
-        
-        overflow-x: hidden;
-    }
-
-    /* Home */
-    #Home{
-        display: flex !important;
-        height: 50vh !important;
-    }
-    #divHome{
-        align-items: center !important;
-        justify-content: center !important;
-    }
-    #imgHome{
-        width: 100vw !important;
-        height: 40vh !important;
-    }
-
-    #imgLogo{
-        width: 35% !important;
-    }
-
-    .nav-list{
-        position: absolute;
-        top: 57vh;
-        right: 0;
-        width: 100vw;
-        height: 60vh;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
-        transform: translateX(100%);
-        transition: transform 0.3s ease-in;
-        background: #f5f5f5;
-    }
-    
-    .nav-list li {
-        margin-left: 0;
-        text-decoration: underline;
-        opacity: 0;
-    }
-
-    .mobile-menu {
-        display: block;
-    }
-
-    .nav-list.active{
-        transform: translateX(0);
-    }
-
-    @keyframes navLinkFade{
-        from {
-            opacity: 0;
-            transform: translateX(50px) ;
-        }
-        to{
-            opacity: 1;
-            transform: translateX(0);
-        }
-    }
-
-    #Sobre {
-        flex-direction: column !important;
-    }
-
-    #Sobre-left, #Sobre-right {
-        margin: 0 !important;
-        width: 100% !important;
-        padding: 0 !important;
-    }
-
-    #Sobre-left{
-        padding: 5%;
-        height: 40vh !important;
-    }
-    #Sobre-left h2{
-        font-size: 1.5em !important;
-    }
-
-    #Sobre-right p{
-        font-size: 0.7rem !important;
-    }
-    
-    .flex_row {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .col-2 {
-        width: 80% !important;
-        height: 60% !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
 }
