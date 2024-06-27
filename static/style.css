@@ -16,7 +16,16 @@ html, body{
 
 #sobre-left{
     background-color: #F2C22D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
+#sobre p{
+    font-size: 0.9rem;
+}
+
 
 /* Equipe */
 
