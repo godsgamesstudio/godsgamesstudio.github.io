@@ -153,3 +153,19 @@ html, body{
     background-color: #333;
     transition: .3s;
 }
+
+@media (min-width: 425px) and (max-width: 600px){
+    #cover {
+        width: 100% !important;
+        height: 40vh !important;
+    }
+}
+    
+
+@media (min-width: 375px) and (max-width: 425px){
+    #cover {
+        width: 100% !important;
+        height: 30vh !important;
+    }
+}
+
