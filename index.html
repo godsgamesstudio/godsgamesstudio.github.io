@@ -22,7 +22,7 @@
                 
                 <nav class="navbar navbar-expand-lg bg-light">
                     <div class="container-fluid">
-                      <a class="navbar-brand w-50 m-0 p-0" href="#"><img src="../static/img/T_LogoCombo.png" class="w-75" alt="Logo"></a>
+                      <a class="navbar-brand w-50 m-0 p-0" href="#"><img id="logo-navbar" src="../static/img/T_LogoCombo.png" class="w-75" alt="Logo"></a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
@@ -65,7 +65,7 @@
 
         </div>
 
-        <div class="row m-0 p-0 w-100 h-auto">
+        <div id="sobre-rigth" class="row m-0 p-0 w-100 h-auto">
 
             <div class="cow m-0 p-3 w-100 h-50 text-center">
 
@@ -89,57 +89,62 @@
             <h2 class="fs-2">Equipe</h2>
         </div>
 
-        <div class="row m-0 p-2 d-flex justify-content-center align-items-center">
-            <div class="image-container" data-bs-toggle="modal" data-bs-target="#modal1">
-                <img src="./static/img/jalison.jpg"  alt="" >
-                <div class="overlay red">
-                    <h4>Falbet</h4>
-                    <p>Game Producer</p>
-                    <p>Game Designer</p>
-                    <p>Game Programmer</p>
+        <div class="col w-100 m-0 p-0">
+            <div class="row m-0 p-2 d-flex justify-content-center align-items-center">
+                <div class="image-container" data-bs-toggle="modal" data-bs-target="#modal1">
+                    <img src="./static/img/jalison.jpg"  alt="" >
+                    <div class="overlay red">
+                        <h4>Falbet</h4>
+                        <p>Game Producer</p>
+                        <p>Game Designer</p>
+                        <p>Game Programmer</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row m-0 p-2 d-flex justify-content-center">
+                <div class="image-container" data-bs-toggle="modal" data-bs-target="#modal2">
+                    <img src="./static/img/natt.png" alt="" >
+                    <div class="overlay pink">
+                        <h4>NaTT</h4>
+                        <p>3D Game Artist</p>
+                        <p>Look Dev</p>
+                        <p>Technical Artist</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row m-0 p-2 d-flex justify-content-center">
+                <div class="image-container" data-bs-toggle="modal" data-bs-target="#modal3">
+                    <img src="./static/img/gustavo.jpeg" alt="" >
+                    <div class="overlay blue">
+                        <h4>Dionizio</h4>
+                        <p>Narrative Designer</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row m-0 p-2 d-flex justify-content-center">
+                <div class="image-container" data-bs-toggle="modal" data-bs-target="#modal4">
+                    <img src="./static/img/keven.jpg" alt="" >
+                    <div class="overlay yellow">
+                        <h4>Nogueira</h4>
+                        <p>Sound Designer</p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="row m-0 p-2 d-flex justify-content-center">
+                <div class="image-container" data-bs-toggle="modal" data-bs-target="#modal5">
+                    <img src="./static/img/caixa.jpg" alt="" >
+                    <div class="overlay purple">
+                        <h4>The Genius</h4>
+                        <p>Concept Artist</p>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <div class="row m-0 p-2 d-flex justify-content-center">
-            <div class="image-container" data-bs-toggle="modal" data-bs-target="#modal2">
-                <img src="./static/img/caixa.jpg" alt="" >
-                <div class="overlay pink">
-                    <h4>NaTT</h4>
-                    <p>3D Modeler</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row m-0 p-2 d-flex justify-content-center">
-            <div class="image-container" data-bs-toggle="modal" data-bs-target="#modal3">
-                <img src="./static/img/gustavo.jpeg" alt="" >
-                <div class="overlay blue">
-                    <h4>Dionizio</h4>
-                    <p>Narrative Designer</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row m-0 p-2 d-flex justify-content-center">
-            <div class="image-container" data-bs-toggle="modal" data-bs-target="#modal4">
-                <img src="./static/img/caixa.jpg" alt="" >
-                <div class="overlay yellow">
-                    <h4>Keven</h4>
-                    <p>Sound Designer</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row m-0 p-2 d-flex justify-content-center">
-            <div class="image-container" data-bs-toggle="modal" data-bs-target="#modal5">
-                <img src="./static/img/caixa.jpg" alt="" >
-                <div class="overlay purple">
-                    <h4>The Genius</h4>
-                    <p>Concept Artist</p>
-                </div>
-            </div>
-        </div>
+        
 
         <!-- Modals -->
 
@@ -156,7 +161,7 @@
                         </div>
                         <div class="col-md-6 m-0 p-0 text-center">
                             <h2 class="fs-6 mt-3 mb-2 fw-bold">Game Designer/Producer/Programmer</h2>
-                            <p class=" fs-6 text-break mb-3">Tendo mais de 3 anos como "Game Dev", minha experiência permite a criação de jogos desde a concepção até a implementação, garantindo uma experiência imersiva e envolvente para os jogadores. <span class="fs-6 fw-bold fst-italic"> Cada código traz um novo obstáculo, mas é a determinação que transforma complexidade em diversão.</span></p>
+                            <p class=" fs-6 text-break mb-3">Tendo mais de 3 anos como "Game Dev", minha experiência permite a criação de jogos desde a concepção até a implementação, garantindo uma experiência imersiva e envolvente para os jogadores. <span class="fs-6 fw-bold fst-italic"> "Cada código traz um novo obstáculo, mas é a determinação que transforma complexidade em diversão."</span></p>
                             
                             <a class="icon-link icon-link-hover"  target="_blank" href="">
                                 <i class="bi bi-instagram text-dark fs-4 me-3"></i>
@@ -177,11 +182,27 @@
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="modal2Label">God of Noob</h5>
+                        <h5 class="modal-title" id="modal2Label">NaTT</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Mais informações sobre God of Noob.
+                        <div class="col-md-6 m-0 p-0">
+                            <img src="./static/img/natt.png" width="100%" height="100%" alt="" class="rounded grayscale shadow-light">
+                        </div>
+                        <div class="col-md-6 m-0 p-0 text-center">
+                            <h2 class="fs-6 mt-3 mb-2 fw-bold">3D Game/Techinical Artist & Look Dev</h2>
+                            <p class=" fs-6 text-break mb-3">Formada em Jogos Digitais e em Artista 3D para Games, viso na elaboração e produção de assets, cenários e personagens de forma otimizada e completa. <span class="fs-6 fw-bold fst-italic"> "Cada polígono é uma peça de um universo em construção, onde a paixão pelo detalhe transforma pixels em realidade."</span></p>
+                            
+                            <a class="icon-link icon-link-hover"  target="_blank" href="https://www.instagram.com/natt.3d/">
+                                <i class="bi bi-instagram text-dark fs-4 me-3"></i>
+                            </a>
+                            <a class="icon-link icon-link-hover" target="_blank" href="https://www.artstation.com/itsnatt">
+                                <i class="bi bi-link-45deg text-dark fs-4 me-3"></i>
+                            </a>
+                            <!--<a class="icon-link icon-link-hover" target="_blank" href="https://www.linkedin.com/in/luiz-soares-2025/">
+                                <i class="bi bi-linkedin text-dark fs-4 me-3"></i>
+                            </a>-->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -200,9 +221,9 @@
                         </div>
                         <div class="col-md-6 m-0 p-0 text-center">
                             <h2 class="fs-6 mt-3 mb-2 fw-bold">Narrative Designer</h2>
-                            <p class=" fs-6 text-break mb-3">Formado em Analise e Desenvolvimento de Sistemas e aventurando-se no cativante universo dos roteiros. <span class="fs-6 fw-bold fst-italic"> Acredito que todos nós temos histórias incriveis para contar, mas poucos tiram elas do papel.</span></p>
+                            <p class=" fs-6 text-break mb-3">Formado em Analise e Desenvolvimento de Sistemas e aventurando-se no cativante universo dos roteiros. <span class="fs-6 fw-bold fst-italic"> "Acredito que todos nós temos histórias incriveis para contar, mas poucos tiram elas do papel."</span></p>
                             
-                            <a class="icon-link icon-link-hover"  target="_blank" href="">
+                            <a class="icon-link icon-link-hover"  target="_blank" href="https://www.instagram.com/_dionizio_luiz/">
                                 <i class="bi bi-instagram text-dark fs-4 me-3"></i>
                             </a>
                             <a class="icon-link icon-link-hover" target="_blank" href="https://github.com/LuizDionizio">
@@ -221,11 +242,27 @@
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="modal4Label">God of Brocha</h5>
+                        <h5 class="modal-title" id="modal4Label">Keven Nogueira</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        Mais informações sobre Gof of Brocha.
+                        <div class="col-md-6 m-0 p-0">
+                            <img src="./static/img/keven.jpg" width="100%" height="100%" alt="" class="rounded grayscale shadow-light">
+                        </div>
+                        <div class="col-md-6 m-0 p-0 text-center">
+                            <h2 class="fs-6 mt-3 mb-2 fw-bold">Sound Designe</h2>
+                            <p class=" fs-6 text-break mb-3">Estudando Análise e Desenvolvimento de Sistemas e buscando novos horizontes no desenvolvimento de jogos. <span class="fs-6 fw-bold fst-italic"> "O aprendizado no decorrer da jornada é tão importante quanto o sucesso."</span></p>
+                            
+                            <a class="icon-link icon-link-hover"  target="_blank" href="https://www.instagram.com/kevensnogueira">
+                                <i class="bi bi-instagram text-dark fs-4 me-3"></i>
+                            </a>
+                            <a class="icon-link icon-link-hover" target="_blank" href="https://github.com/KevensNogueira">
+                                <i class="bi bi-github text-dark fs-4 me-3"></i>
+                            </a>
+                            <a class="icon-link icon-link-hover" target="_blank" href="https://www.linkedin.com/in/kevensnogueira/">
+                                <i class="bi bi-linkedin text-dark fs-4 me-3"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
