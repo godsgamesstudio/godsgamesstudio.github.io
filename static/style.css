@@ -221,8 +221,8 @@ html, body{
 
     #image-container-grid .row{
         margin-bottom: 2% !important;
-        width: 80%;
-        height: 30vh;
+        width: 70% !important;
+        height: 30vh !important;
     }
     
     /*#image-container-grid .image-grid-center{
