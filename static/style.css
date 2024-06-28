@@ -158,7 +158,67 @@ html, body{
     transition: .3s;
 }
 
-@media (min-width: 600px) and (max-width: 768px){
+@media (min-width: 800px) and (max-width: 2500px){
+    #cover {
+        width: 100% !important;
+        height: 60vh !important;
+    }
+
+    #logo-navbar{
+        width: 15vw !important;
+    }
+
+    #nav-link-main{
+        justify-content: end;
+        margin-right: 5% !important;
+    }
+
+    #nav-link-main ul {
+        display: flex !important; /* Define contêiner flexível */
+        justify-content: flex-end !important; /* Alinha itens à direita */
+        margin: 0 !important; /* Remove margem da lista */
+        padding: 0 !important; /* Remove padding da lista */
+    }
+    #nav-link-main li {
+        margin-left: 2% !important;
+    }
+    #nav-link-main a{
+        font-size: 1rem !important;
+    }
+    #nav-link-main a:hover{
+        color: #F2C22D !important;
+    }
+
+    #sobre{
+        display: flex !important;
+    }
+    #sobre-left{
+        float: left !important;
+        height: 60vh !important;
+    }
+    #sobre-rigth{
+        float: right !important;
+        height: 60vh !important;
+    }
+    #sobre-rigth p{
+        font-size: 1rem !important;
+        text-align: center !important;
+    }
+
+    #image-container-grid{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #image-container-grid .row{
+        margin-bottom: 2% !important;
+        width: 100%;
+        height: 40vh;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 800px){
     #cover {
         width: 100% !important;
         height: 50vh !important;
@@ -183,9 +243,30 @@ html, body{
         width: 100% !important;
         height: 40vh !important;
         padding-top: 4% !important;
-        font-size: 2rem !important;
+    }
+
+    #sobre-rigth p{
+        font-size: 1rem !important;
+    }
+
+    #image-container-grid{
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important; /* Define duas colunas */
+        grid-template-rows: repeat(3, auto) !important; /* Define três linhas */ 
+    }
+
+    #image-container-grid .row{
+        margin-bottom: 2% !important;
+        width: 100%;
+        height: 40vh;
     }
     
+    #image-container-grid .image-grid-center{
+        grid-column: 1 / -1 !important; /* Faz a imagem ocupar todas as colunas */
+        justify-self: center !important; /* Centraliza a imagem dentro da área */
+        width: 50% !important; /* Ajusta a largura da imagem centralizada */
+
+    }
 
 }
 
