@@ -115,7 +115,7 @@ html, body{
 }
 
 .overlay.yellow {
-    background-color: rgba(255, 255, 0, 0.7);
+    background-color: rgba(244, 196, 48, 0.7);
 }
 
 .overlay.purple {
@@ -162,7 +162,7 @@ html, body{
 @media (min-width: 800px){
     #cover {
         width: 100% !important;
-        height: 60vh !important;
+        height: 100vh !important;
     }
 
     #logo-navbar{
@@ -213,6 +213,34 @@ html, body{
     }
 
     #image-container-grid{
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr) !important; /* Define duas colunas */
+        grid-template-rows: repeat(3, auto) !important; /* Define três linhas */ 
+    }
+
+    #image-container-grid .row{
+        margin-bottom: 2% !important;
+        width: 90%;
+        height: 40vh;
+    }
+    
+    #image-container-grid .image-grid-center{
+        grid-column: 1 / -1 !important; /* Faz a imagem ocupar todas as colunas */
+        justify-self: center !important; /* Centraliza a imagem dentro da área */
+        width: 50% !important; /* Ajusta a largura da imagem centralizada */
+
+    }
+
+    .modal-body{
+        text-align: center !important;
+    }
+
+    .modal-body img{
+        max-width: 60% !important; /* Define a largura máxima da modal */
+    }
+    
+
+    /*#image-container-grid{
         display: flex;
         justify-content: space-between;
     }
@@ -221,7 +249,7 @@ html, body{
         margin-bottom: 2% !important;
         width: 100%;
         height: 40vh;
-    }
+    }*/
 
     @media (min-width: 1100px) and (max-width: 1500px){
         #cover {
