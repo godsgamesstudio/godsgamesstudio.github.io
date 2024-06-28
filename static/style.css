@@ -215,6 +215,7 @@ html, body{
     #image-container-grid{
         display: grid !important;
         grid-template-columns: repeat(2, 1fr) !important; /* Define duas colunas */
+        place-items: center; /* centraliza todo o conteúdo dentro do grid */
         grid-template-rows: repeat(3, auto) !important; /* Define três linhas */ 
     }
 
