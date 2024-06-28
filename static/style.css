@@ -221,16 +221,16 @@ html, body{
 
     #image-container-grid .row{
         margin-bottom: 2% !important;
-        width: 90%;
-        height: 40vh;
+        width: 80%;
+        height: 30vh;
     }
     
-    #image-container-grid .image-grid-center{
+    /*#image-container-grid .image-grid-center{
         grid-column: 1 / -1 !important; /* Faz a imagem ocupar todas as colunas */
-        justify-self: center !important; /* Centraliza a imagem dentro da área */
-        width: 50% !important; /* Ajusta a largura da imagem centralizada */
+        /*justify-self: center !important; /* Centraliza a imagem dentro da área */
+        /*width: 50% !important; /* Ajusta a largura da imagem centralizada */
 
-    }
+    /*}*/
 
     .modal-body{
         text-align: center !important;
