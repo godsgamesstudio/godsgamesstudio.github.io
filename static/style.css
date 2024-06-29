@@ -169,24 +169,24 @@ html, body{
         width: 20% !important;
     }
 
-    #nav-link-main{
+    #navbarTogglerDemo02{
         justify-content: end;
         margin-right: 5% !important;
     }
 
-    #nav-link-main ul {
+    #navbarTogglerDemo02 ul {
         display: flex !important; /* Define contêiner flexível */
         justify-content: flex-end !important; /* Alinha itens à direita */
         margin: 0 !important; /* Remove margem da lista */
         padding: 0 !important; /* Remove padding da lista */
     }
-    #nav-link-main li {
+    #navbarTogglerDemo02 li {
         margin-left: 2% !important;
     }
-    #nav-link-main a{
+    #navbarTogglerDemo02 a{
         font-size: 1rem !important;
     }
-    #nav-link-main a:hover{
+    #navbarTogglerDemo02 a:hover{
         color: #F2C22D !important;
     }
 
@@ -240,7 +240,7 @@ html, body{
         #logo-navbar{
             width: 10vw !important;
         }
-        #nav-link-main a{
+        #navbarTogglerDemo02 a{
             font-size: 1.2rem !important;
         }
         #sobre-rigth p{
