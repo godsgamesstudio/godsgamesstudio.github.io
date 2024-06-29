@@ -166,7 +166,7 @@ html, body{
     }
 
     #logo-navbar{
-        width: 15vw !important;
+        width: 20% !important;
     }
 
     #nav-link-main{
@@ -212,26 +212,6 @@ html, body{
         margin-bottom: 2%;
     }
 
-    #image-container-grid{
-        display: grid !important;
-        grid-template-columns: repeat(2, 1fr) !important; /* Define duas colunas */
-        place-items: center; /* centraliza todo o conteúdo dentro do grid */
-        grid-template-rows: repeat(3, auto) !important; /* Define três linhas */ 
-    }
-
-    #image-container-grid .row{
-        margin-bottom: 2% !important;
-        width: 70% !important;
-        height: 30vh !important;
-    }
-    
-    /*#image-container-grid .image-grid-center{
-        grid-column: 1 / -1 !important; /* Faz a imagem ocupar todas as colunas */
-        /*justify-self: center !important; /* Centraliza a imagem dentro da área */
-        /*width: 50% !important; /* Ajusta a largura da imagem centralizada */
-
-    /*}*/
-
     .modal-body{
         text-align: center !important;
     }
@@ -241,16 +221,16 @@ html, body{
     }
     
 
-    /*#image-container-grid{
+    #image-container-grid{
         display: flex;
         justify-content: space-between;
     }
 
     #image-container-grid .row{
         margin-bottom: 2% !important;
-        width: 100%;
-        height: 40vh;
-    }*/
+        width: 80%;
+        height: 40%;
+    }
 
     @media (min-width: 1100px) and (max-width: 1500px){
         #cover {
@@ -312,7 +292,7 @@ html, body{
     #image-container-grid .row{
         margin-bottom: 2% !important;
         width: 100%;
-        height: 40vh;
+        height: 90%;
     }
     
     #image-container-grid .image-grid-center{
